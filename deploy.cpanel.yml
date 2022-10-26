@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/joehukif/repositories/flask-archery2
+    - /bin/cp -r * $DEPLOYPATH
