@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{#    <a class="card-item-link" href="#">#}
+{##}
+{#    </a>#}
+
+    <div class="d-flex justify-content-center flex-wrap mt-4 p-0">
+
+        <div class="bg-image ripple col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2" data-mdb-ripple-color="light">
+            <a href="{{ url_for('ss_corporate')}}">
+            <div class="mask" style="background-color: rgba(0, 123, 255, 0.75)">
+                <p class="text">Corporate Events</p>
+            </div>
+            </a>
+        </div>
+
+        <div class="bg-image col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2">
+            <a href="{{ url_for("ss_parties") }}">
+                <div class="mask" style="background-color: rgba(102, 16, 242, 0.75)">
+                    <p class="text">Parties</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bg-image col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2">
+            <a href="{{ url_for('ss_compound')}}">
+                <div class="mask" style="background-color: rgba(40, 167, 69, 0.75)">
+                    <p class="text">Compound Bow Check-up</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bg-image col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2">
+            <a href="{{ url_for('ss_recurve')}}">
+                <img src="/static//images/shop5-4.jpg">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.5)">
+                    <p class="text">Recurve Bow Check-up</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bg-image col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2">
+            <a href="{{ url_for('ss_arrow')}}">
+                <img src="/static//images/shop5-4.jpg">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.5)">
+                    <p class="text">Arrow Building</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bg-image col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2">
+            <a href="{{ url_for('ss_string')}}">
+                <img src="/static//images/shop5-4.jpg">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.5)">
+                    <p class="text">String Making</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+{#    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">#}
+{##}
+{#          <div class="view overlay">#}
+{#            <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">#}
+{#            <div class="mask flex-center rgba-red-strong">#}
+{#              <p class="white-text">Strong overlay</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#    </div>#}
+
+{#    <a class="gallery__item-link" href="/pages/strings">#}
+{#        <div class="gallery__image rimage-background fade-in lazyloaded" style="background-position: center center; background-image: url('https://cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_900x.jpg?v=1656688299')">#}
+{#            <noscript>#}
+{#                <img src="//cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_1024x1024.jpg?v=1656688299" alt="" class="rimage-background__image">#}
+{#            </noscript>#}
+{#            <picture style="display: none;" class=""><source <<data-srcse></data-srcse></data-srcse>t="//cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_180x.jpg?v=1656688299 180w 240h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_360x.jpg?v=1656688299 360w 480h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_540x.jpg?v=1656688299 540w 720h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_720x.jpg?v=1656688299 720w 960h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_900x.jpg?v=1656688299 900w 1200h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_1080x.jpg?v=1656688299 1080w 1440h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_1296x.jpg?v=1656688299 1296w 1728h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM.jpg?v=1656688299 1512w 2016h" sizes="505px" srcset="//cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_180x.jpg?v=1656688299 180w 240h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_360x.jpg?v=1656688299 360w 480h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_540x.jpg?v=1656688299 540w 720h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_720x.jpg?v=1656688299 720w 960h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_900x.jpg?v=1656688299 900w 1200h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_1080x.jpg?v=1656688299 1080w 1440h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM_1296x.jpg?v=1656688299 1296w 1728h, //cdn.shopify.com/s/files/1/0637/1016/7258/files/WhatsApp_Image_2022-06-29_at_11.03.55_AM.jpg?v=1656688299 1512w 2016h"><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="505px"></picture>#}
+{#        </div>#}
+{#        <div class="overlay-position overlay-position--center-center overlay-style--box">#}
+{#            <div class="overlay-container overlay--center  global-border-radius-overlays">#}
+{#                <div class="overlay__bg "></div>#}
+{#                <div class="overlay__content"><h3 class="large-title">Strings</h3><div class="overlay-text"><p>Custom made</p></div></div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </a>#}
+
+
+{% endblock %}
