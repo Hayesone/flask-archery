@@ -1,2 +1,3 @@
 /.idea/flask-archery.iml
 /.idea/
+*.pyc
