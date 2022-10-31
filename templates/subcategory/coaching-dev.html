@@ -1,32 +1,50 @@
 {% extends "layout.html" %}
 {% block content %}
 
-    <div class="d-flex justify-content-center flex-wrap mt-4 p-0">
+<div class="gallery-container">
 
-        <div class="bg-image ripple col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2" data-mdb-ripple-color="light">
-            <a href="{{ url_for('coaching_1to1')}}">
-            <div class="mask" style="background-color: rgba(0, 123, 255, 0.75)">
-                <p class="text">1:1 Coaching</p>
+    <div class="gallery-item col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mr-md-2 ml-md-2">
+        <a href="{{ url_for('coaching_1to1')}}">
+            <img src="/static//images/shop.jpg" class="gallery-image" style="background-position: center center;">
+            <div class="gallery-overlay-position">
+                <div class="gallery-overlay-container">
+                    <div class="gallery-overlay-bg"></div>
+                    <div class="gallery-overlay-content">
+                        <h3>1:1 Coaching</h3>
+                    </div>
+                </div>
             </div>
-            </a>
-        </div>
-
-        <div class="bg-image col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2">
-            <a href="{{ url_for("coaching_group") }}">
-                <div class="mask" style="background-color: rgba(0, 123, 255, 0.75)">
-                    <p class="text">Group Coaching Courses</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="bg-image col-12 col-sm-12 col-md-5 col-lg-3 mb-4 mr-md-2 ml-md-2 mr-lg-2 ml-lg-2">
-            <a href="{{ url_for("coaching_third") }}">
-                <div class="mask" style="background-color: rgba(0, 123, 255, 0.75)">
-                    <p class="text">Third Eye Archery Training</p>
-                </div>
-            </a>
-        </div>
-
+        </a>
     </div>
+
+    <div class="gallery-item col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mr-md-2 ml-md-2">
+        <a href="{{ url_for("coaching_group") }}">
+            <img src="/static//images/shop.jpg" class="gallery-image" style="background-position: center center;">
+            <div class="gallery-overlay-position">
+                <div class="gallery-overlay-container">
+                    <div class="gallery-overlay-bg"></div>
+                    <div class="gallery-overlay-content">
+                        <h3>Group Coaching Courses</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="gallery-item col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mr-md-2 ml-md-2">
+        <a href="{{ url_for("coaching_third") }}">
+            <img src="/static//images/shop.jpg" class="gallery-image" style="background-position: center center;">
+            <div class="gallery-overlay-position">
+                <div class="gallery-overlay-container">
+                    <div class="gallery-overlay-bg"></div>
+                    <div class="gallery-overlay-content">
+                        <h3>Third Eye Archery Training</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
 
 {% endblock %}

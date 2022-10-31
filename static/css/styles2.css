@@ -109,3 +109,80 @@
 .bg-image .mask .text p:hover {
     background-color: gold;
 }
+
+
+.gallery-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding:0
+}
+
+.gallery-item {
+    height:300px;
+    overflow:hidden;
+    border-radius: 30px;
+
+}
+
+.gallery-item a {
+    text-decoration: underline;
+    color: #0922ac;
+    transition: color .15s;
+    touch-action: manipulation;
+    background-color: transparent;
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.gallery-overlay-position {
+    padding:30px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.gallery-overlay-container {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.gallery-overlay-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-overlay-content {
+    color: #3f3f3f;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-overlay-content h3{
+    margin: 0px;
+    font-size: 34px;
+}
