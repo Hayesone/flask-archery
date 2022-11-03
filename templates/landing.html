@@ -67,27 +67,37 @@
         }
     </style>
 
-    <script>
-        function searchStore(input) {
-            if (input.length === 0) {
-                console.log("Search query empty.")
-                return false;
-            } else {
-                var result = input.replace(/\s+/g, "+");
-                window.open('https://shop.inrangearchery.co.uk/search?type=product&q=' + result);
-            }
-        }
-    </script>
-
 
     <div>
 
         <div class="input-group input-group-lg mt-3 mb-3" style="border-radius: 50px">
-                <input type="text" class="form-control" id="searchId" placeholder="Search our store!" aria-label="Search our store!" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search our store!" aria-label="Search our store!" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" onclick="searchStore(document.getElementById('searchId').value)">Go</button>
+                    <button class="btn btn-outline-secondary" id="searchButton" type="button" onclick="searchStore(document.getElementById('searchInput').value)">Go</button>
                 </div>
         </div>
+
+
+        <script>
+            function searchStore(input) {
+                if (input.length === 0) {
+                    console.log("Search query empty.")
+                    return false;
+                } else {
+                    var result = input.replace(/\s+/g, "+");
+                    window.open('https://shop.inrangearchery.co.uk/search?type=product&q=' + result);
+                }
+            }
+
+            var input = document.getElementById("searchInput");
+
+            input.addEventListener("keypress", function(event) {
+              if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("searchButton").click();
+              }
+            });
+        </script>
 
         <div class="d-flex flex-wrap justify-content-center mb-5" style="overflow:hidden; border-radius: 50px">
 
