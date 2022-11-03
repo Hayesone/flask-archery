@@ -81,22 +81,22 @@ def coaching_third():
 
 @app.route('/starting-out-archery/have-a-go-sessions')
 def starting_out_have_a_go():
-    return render_template("subcategory/info/have-a-go.html")
+    return render_template("subcategory/starting-out-in-archery/have-a-go.html")
 
 
 @app.route('/starting-out-archery/beginner-courses')
 def starting_out_beginners():
-    return render_template("subcategory/info/beginners-courses.html")
+    return render_template("subcategory/starting-out-in-archery/beginners-courses.html")
 
 
 @app.route('/starting-out-archery/your-first-kit')
 def starting_out_your_first_kit():
-    return render_template("subcategory/info/your-first-kit.html")
+    return render_template("subcategory/starting-out-in-archery/your-first-kit.html")
 
 
 @app.route('/starting-out-archery/local-clubs')
 def starting_out_local_clubs():
-    return render_template("subcategory/info/local-clubs.html")
+    return render_template("subcategory/starting-out-in-archery/local-clubs.html")
 
 # No route for kent archery as direct link out
 

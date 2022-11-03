@@ -54,9 +54,7 @@
     transition: background-color 0.5s;
 }
 
-.bg-image .mask .text p:hover {
-    background-color: gold;
-}
+
 
 
 .gallery-container {
