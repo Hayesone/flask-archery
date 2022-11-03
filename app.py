@@ -14,8 +14,8 @@ def shop_services():
 
 
 @app.route('/archery-coaching')
-def coaching_development():
-    return render_template("subcategory/coaching-dev.html")
+def archery_coaching():
+    return render_template("subcategory/archery-coaching.html")
 
 
 @app.route('/starting-out-archery')
