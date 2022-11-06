@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="content-page">
     <h2>Compound Bow check-up</h2>
     <p>Did you buy your bow online and need it to be set up for the first time? Maybe you just want your existing bow checked over to make everything is set up correctly and safely.</p>
-    <p>Including (but not limited to):</p>
+    <p>Our compound bow check-up appointments include (but are not limited to):</p>
     <ul>
         <li>Paper tuning</li>
         <li>Third Axis alignment</li>
@@ -12,12 +13,15 @@
         <li>Peep sight positioning</li>
         <li>Draw length and weight adjustment</li>
     </ul>
+
+    <p>Depending on the amount of work that needs to be done the appointment you need could be just 20-30 minutes or as much as a couple of hours. It is always best to contact us in advance so that we can determine the amount of time that needs to be booked. You can use the button below to contact us or give us a call on <a href="tel:01732 886739" class="contactbar__link" style="color: #333333">01732 886739</a>.</p>
+
     <button type="button" class="btn btn-primary">
-        <a href="https://bookings.inrangearchery.co.uk/" style="color: #1d2124">Book Appointment</a>
+        <a href="https://shop.inrangearchery.co.uk/pages/contact" style="color: #1d2124">Contact Us</a>
     </button>
 
     <div class="text-center pt-4">
         <a class="btn btn-secondary" href="{{ url_for('shop_services')}}" role="button">Back</a>
     </div>
-
+</div>
 {% endblock %}

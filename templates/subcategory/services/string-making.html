@@ -1,10 +1,36 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="content-page">
     <h2>String Making</h2>
-    <p>We can custom make recurve strings to your specific requirements including colour, material, strand  count, serving type and nock fit.</p>
-    <button type="button" class="btn btn-primary"><a href="https://shop.inrangearchery.co.uk/pages/string-making" style="color: #1d2124">Shop String Making</a></button>
+    <p>In-Range Archery can custom make recurve strings to your specific requirements including colour, material, strand count, serving type and nock fit.</p>
+
+    <p>String specifications can make a huge difference to the performance of your shooting.</p>
+
+    <h3>MATERIAL TYPES</h3>
+    <ul>
+        <li>Dacron: is a good string material for beginner’s basic bows but is a material that keeps on stretching over time.</li>
+        <li>Fast Flight material is much better spec, far less stretch, thinner material but still forgiving.</li>
+        <li>BCY 8125 material has very little stretch, thinner and significantly more performance.</li>
+    </ul>
+
+    <h3>NUMBER OF STRANDS</h3>
+    <p>The number of strands can affect string performance. More strands mean a more stable shot but slower which can have the effect on the behaviour of the arrow, likewise if you have fewer strands it can increase arrow speed slightly and weaken arrow spine but is also less forgiving.</p>
+
+    <h3>SERVING TYPE</h3>
+
+    <ul>
+        <li>A simple braided BCY 400 serving works fine and is the serving you would find on most mass-produced factory strings.</li>
+        <li>Halo serving is more expensive but performs well, slips off the tab smoothly and quickly. Halo materials come in various thicknesses to allow for a perfect nock fit.</li>
+    </ul>
+
+    <p>If you need advice about string making or you would like us to make a string for you, please contact us using the below link or by calling us on <a href="tel:01732 886739" class="contactbar__link" style="color: #333333">01732 886739</a>.</p>
+
+    <button type="button" class="btn btn-primary">
+        <a href="https://shop.inrangearchery.co.uk/pages/contact" style="color: #1d2124">Contact Us</a>
+    </button>
 
     <div class="text-center pt-4">
         <a class="btn btn-secondary" href="{{ url_for('shop_services')}}" role="button">Back</a>
     </div>
+</div>
 {% endblock %}

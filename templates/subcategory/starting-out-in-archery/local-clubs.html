@@ -1,20 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
-
+<div class="content-page">
     <h2>Local Clubs</h2>
 
     <p>There are Archery clubs all over the UK. Click on the map below to find out more details about clubs around the  South-East of England, those that are closest to In-Range Archery.</p>
 
     <iframe src="https://www.google.com/maps/d/embed?mid=1TBQdJovPshw5TYEzTqsdCIxXy4SJJac&ehbc=2E312F" width="100%" height="480"></iframe>
 
-    <p>Many clubs run beginner’s sessions and courses which you will need to undertake first before you can shoot. In Range also runs beginner’s courses.</p>
+    <p>Many clubs run beginner’s sessions and courses which you will need to undertake first before you can shoot. In Range also runs beginner’s courses. You can book onto a course with us using the button below.</p>
 
-    <!--<button type="button" class="btn btn-primary">
-        <a href="https://bookings.inrangearchery.co.uk/" style="color: #1d2124">Beginners Courses</a>
-    </button>-->
+    <button type="button" class="btn btn-primary">
+        <a href="#" style="color: #1d2124">Beginners Courses (Currently in the works)</a>
+    </button>
+
+    <p>Don’t see your club on our map? Is the information about your club incorrect? Please contact us with any updates you have using the button below.</p>
+
+    <button type="button" class="btn btn-primary">
+        <a href="https://shop.inrangearchery.co.uk/pages/contact" style="color: #1d2124">Contact us</a>
+    </button>
 
     <div class="text-center pt-4">
         <a class="btn btn-secondary" href="{{ url_for('starting_out_archery')}}" role="button">Back</a>
     </div>
-
+</div>
 {% endblock %}

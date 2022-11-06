@@ -132,3 +132,11 @@
     margin: 0px;
     font-size: 34px;
 }
+
+.content-page h3 {
+    font-size:1.75rem;
+}
+
+.content-page .btn {
+    text-transform: uppercase;
+}

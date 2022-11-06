@@ -1,16 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="content-page">
     <h2>Arrow Building</h2>
     <p>All our arrows are custom made to your specific requirements by a competent archer with significant experience of making arrows. We sell all types of arrows from basic entry level to high performance Olympic standard.</p>
-    <button type="button" class="btn btn-primary"><a href="https://shop.inrangearchery.co.uk/pages/arrow-building" style="color: #1d2124">Shop Arrow Building</a></button>
-    <p class="pt-3">We can also supply arrow wraps to further customise your arrows.</p>
+
+    <p>Arrows are not sold “off the shelf”. Due to the number of different models, spine ratings and colours available it is not possible for us to stock everything so, if you are thinking of getting new arrows, we need to know what fits you. If you don’t already know what you need, please come in and talk to us. Be sure bring your bow with you when you come so we can correctly measure your draw length and draw weight as the rating on the limbs is rarely the actual draw weight being held at full draw.</p>
+
+    <p>During the appointment we will take the measurements and calculate the correct spined arrows for you. We will discuss fletching type and colour and other options that are available to you like customised wraps on your arrow shafts to make them more unique.</p>
+
+    <button type="button" class="btn btn-primary"><a href="https://bookings.inrangearchery.co.uk/bookings/shop/" style="color: #1d2124">Book your Arrow Building Appointment Here</a></button>
+
+    <p class="pt-3">If you already have your arrows and fancy an arrow wrap please follow the link below</p>
+
     <button type="button" class="btn btn-primary">
-        <a href="https://shop.inrangearchery.co.uk/collections/wraps" style="color: #1d2124">Shop Arrow Wraps</a>
+        <a href="https://shop.inrangearchery.co.uk/pages/gear-customisation" style="color: #1d2124">Arrow Customisation</a>
     </button>
 
     <div class="text-center pt-4">
         <a class="btn btn-secondary" href="{{ url_for('shop_services')}}" role="button">Back</a>
     </div>
 
-
+</div>
 {% endblock %}

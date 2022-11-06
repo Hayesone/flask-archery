@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="content-page">
     <h2>Recurve Bow check-up</h2>
     <p>Did you buy your bow online and need it to be set up for the first time? Maybe you just want your existing bow checked over to make everything is set up correctly and safely.</p>
-    <p>Including (but not limited to):</p>
+    <p>Our recurve bow check-up appointments include (but are not limited to):</p>
     <ul>
         <li>Limb alignment</li>
         <li>Nocking points</li>
@@ -11,9 +12,12 @@
         <li>Spine matching of arrows</li>
     </ul>
 
+    <p>Ideally, we need an hour to do a recurve bow check up. You can book an hours appointment using the button below or alternatively give us a call on <a href="tel:01732 886739" class="contactbar__link" style="color: #333333">01732 886739</a>.</p>
+
     <button type="button" class="btn btn-primary"><a href="https://bookings.inrangearchery.co.uk/" style="color: #1d2124">Book Appointment</a></button>
 
     <div class="text-center pt-4">
         <a class="btn btn-secondary" href="{{ url_for('shop_services')}}" role="button">Back</a>
     </div>
+</div>
 {% endblock %}
